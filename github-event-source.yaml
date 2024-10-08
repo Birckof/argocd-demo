@@ -6,7 +6,7 @@ metadata:
 spec:
   githubs:
     - name: example
-      owner: pick-ia
+      owner: Birckof
       repository: argocd-demo
       events:
         - push
