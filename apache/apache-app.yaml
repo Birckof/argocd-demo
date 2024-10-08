@@ -20,7 +20,7 @@ spec:
         image: httpd:2.4
         ports:
         - containerPort: 80
-
+---
 # Aquí comienza el Sync Hook (PreSync) que se ejecutará antes del despliegue
 apiVersion: batch/v1
 kind: Job
@@ -29,8 +29,6 @@ metadata:
   namespace: default
   annotations:
     argocd.argoproj.io/hook: PreSync
-  labels:
-    app: apache-job
 spec:
   template:
     spec:
